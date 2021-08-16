@@ -1,0 +1,307 @@
+<main class="col-lg-12 d-flex flex-column justify-content-start align-items-center">
+
+  <div class="container d-flex justify-content-center">
+    <h1 class="text-start">
+      Turn
+      <span>Chats</span>
+        <br>
+      Into
+      <span>Revenue</span>
+    </h1>
+  </div>
+
+  <div class="container row mt-3">
+
+    <div class="left_column col d-flex flex-column justify-content-end">
+      <div *ngFor="let user of users" class="row w-100 items py-3 mb-4">
+
+        <div class="col-4 d-flex justify-content-center">
+          <img src="https://i0.wp.com/365webresources.com/wp-content/uploads/2016/09/FREE-PROFILE-AVATARS.png" width="70px" height="70px">
+        </div>
+
+        <div class="col-6 d-flex flex-column justify-content-center">
+          <span class="name fw-bold">{{user.name}}</span>
+
+          <div class="d-flex align-items-center" [ngSwitch]="user.type">
+            <div *ngSwitchCase="'VIP client'" class="star"></div>
+            <div *ngSwitchCase="'New client'" class="people"></div>
+            <div *ngSwitchCase="'Recurring client'" class="check"></div>
+            <span>{{user.type}}</span>
+          </div>
+
+        </div>
+
+        <div class="col-2 d-flex justify-content-end p-0" [ngSwitch]="user.channel">
+          <div *ngSwitchCase="'WhatsApp'" class="whatsapp"></div>
+          <div *ngSwitchCase="'Messenger'" class="messenger"></div>
+          <div *ngSwitchCase="'Instagram'" class="instagram"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="w-100 chat">
+        <div class="w-100 d-flex descending">
+          <div class="todito"></div>
+          <div class="message p-3">
+            Hi! Welcome to Rocket Pizza! How can I help you?
+            <div class="d-flex flex-column mt-2">
+              <span>1. Order Now</span>
+              <span>2. Where is my Pizza?</span>
+              <span>3. Locations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100 d-flex align-items-center justify-content-end mt-4 descending">
+          <div class="message_green px-2 py-1">
+            1
+          </div>
+          <div class="todito"></div>
+        </div>
+
+        <div class="w-100 d-flex descending">
+          <div class="todito"></div>
+          <div class="product"></div>
+        </div>
+
+        <div class="w-100 d-flex descending">
+          <div class="todito invisible"></div>
+          <div class="message p-3">
+            Good to hear from you again Andrew! Do you want the Pepperoni Special for $9.95?
+          </div>
+        </div>
+
+        <div class="w-100 d-flex align-items-center justify-content-end mt-4 descending">
+          <div class="message_green px-3 py-1">
+            Yes!
+          </div>
+          <div class="todito"></div>
+        </div>
+
+        <div class="w-100 d-flex descending">
+          <div class="todito"></div>
+          <div class="message p-3">
+            Excellent! You can pay with your card in the following link:
+            <div class="d-flex w-100 justify-content-center mt-2">
+              <div class="w-100 mw-100 message_green text-center px-2 py-1">
+                Pay Here
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right_column col d-flex flex-column justify-content-end">
+      <div class="container">
+        <div class="d-grid gap-4 grid_template">
+
+          <div class="col items d-flex flex-column align-items-center justify-content-between py-5">
+            <div class="sale mb-2"></div>
+            <span>+ New Order</span>
+          </div>
+
+          <div class="col items d-flex flex-column align-items-center justify-content-between py-5">
+            <div class="lead mb-2"></div>
+            <span>+ New Lead</span>
+          </div>
+
+          <div class="col items d-flex flex-column align-items-center justify-content-between py-5">
+            <div class="quote mb-2"></div>
+            <span>+ Send Quote</span>
+          </div>
+
+          <div class="col items d-flex flex-column align-items-center justify-content-between py-5">
+            <div class="payment mb-2"></div>
+            <span>+ Payment</span>
+          </div>
+
+          <div class="col items d-flex flex-column align-items-center justify-content-between py-5">
+            <div class="reservation mb-2"></div>
+            <span>+ Reservation</span>
+          </div>
+
+          <div class="col items d-flex flex-column align-items-center justify-content-between py-5">
+            <div class="inquiry mb-2"></div>
+            <span>+ Inquiry</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<div class="channels container">
+  <div class="row w-75 mx-auto">
+    <div class="col" *ngFor="let channel of channels">
+      <div class="logo_channel" style="background-image: url('{{channel}}');"></div>
+    </div>
+  </div>
+</div>
+
+<section class="col-lg-12 d-flex flex-column justify-content-center align-items-start">
+
+  <div class="container px-0 flex-column">
+
+    <div class="first_card d-flex flex-column w-100">
+      <h2 class="text-center">
+        <strong>
+          Chat Cartel is a multi-agent platform that helps companies drive sales,
+        </strong> improve customer service and generate leads through WhatsApp and Messenger.</h2>
+
+      <div class="row">
+
+        <div class="col px-5">
+          <img class="w-100" src="assets/images/chatcenter.png">
+        </div>
+
+        <div class="col px-5 d-flex flex-column justify-content-between py-4">
+          <div class="d-flex flex-row" *ngFor="let info of information">
+            <img class="mx-4" [src]="info.icon">
+            <div class="d-flex flex-column">
+              <h5>{{info.title}}</h5>
+              <span>{{info.text}}</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="second_card d-flex flex-column w-100">
+
+      <div class="row mx-0 my-5" *ngFor="let card of cards">
+
+        <div class="col d-flex align-items-center px-5 position-relative">
+          <img class="position-absolute top-50 start-0 translate-middle" [src]="card.icon_sm">
+          <img class="mx-4 image_animate" [src]="card.icon">
+        </div>
+
+        <div class="col px-5 d-flex flex-column justify-content-center py-4">
+
+          <div class="d-flex flex-column">
+            <h4 class="mb-4">
+              <strong>{{card.title}}</strong>
+            </h4>
+            <span class="mb-4">{{card.text}}</span>
+
+            <div class="d-flex flex-row flex-wrap w-100 justify-content-center align-items-center">
+              <div class="w-50 mb-4" *ngFor="let feature of card.options">
+                <div class="w-95 button py-3 text-center">
+                  {{feature}}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row my-5">
+        <div class="col d-flex justify-content-center align-items-center">
+          <div class="w-50">
+            <h3>Get the best suited plan for your <u><strong>company</strong></u></h3>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <div class="button w-auto p-3">Let´s Start</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container other_container d-flex flex-column justify-content-between pt-5 mb-4">
+
+    <div class="row">
+      <div class="col d-flex flex-column align-items-center justify-content-center">
+        <h3><strong>Conversational Commerce</strong></h3>
+        <span>Accept card payments from your customers in the different payment tools available.</span>
+
+        <div class="w-100 d-flex justify-content-center align-items-center">
+          <img src="assets/images/visa.svg">
+          <img src="assets/images/mastercard.svg">
+          <img src="assets/images/american.svg">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col d-flex justify-content-end align-items-center">
+        <div class="w-auto d-flex flex-column align-items-center">
+          <img src="assets/images/virtual_catalog.png">
+          <div class="button w-auto px-3 py-2">
+            Virtual Catalog
+          </div>
+        </div>
+      </div>
+
+      <div class="col d-flex justify-content-start align-items-center">
+        <div class="w-auto d-flex flex-column align-items-center">
+          <img src="assets/images/payment_links.png">
+
+          <div class="button w-auto px-3 py-2">
+            Payment Links
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <h3><strong>Payment Gateways</strong></h3>
+    </div>
+
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col d-flex flex-column align-items-center text-center">
+        <img class="mb-2" src="assets/images/stripe.png" width="50%">
+        <strong>Stripe</strong>
+      </div>
+
+      <div class="col d-flex flex-column text-center align-items-center">
+        <img class="mb-2" src="assets/images/paypal.png" width="50%">
+        <strong>PayPal</strong>
+      </div>
+
+      <div class="col d-flex flex-column text-center align-items-center">
+        <img class="mb-2" src="assets/images/visanet.png" width="50%">
+        <strong>VisaNet</strong>
+      </div>
+
+      <div class="col d-flex flex-column text-center align-items-center">
+        <img class="mb-2" src="assets/images/cybersource.png" width="50%">
+        <strong>CyberSource</strong>
+      </div>
+
+      <div class="col d-flex flex-column text-center align-items-center">
+        <img class="mb-2" src="assets/images/pagalo.png" width="50%">
+        <strong>Pagalo</strong>
+      </div>
+
+    </div>
+
+    <div class="row text-center">
+      <div class="col">
+        *Request the Payment API to integrate to your local payment provider
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col d-flex flex-column align-items-center text-center">
+        <h3><strong>Interested in a Free Demo?</strong></h3>
+        <a [routerLink]="['/contact']" class="button w-auto px-3 py-2 text-decoration-none">Contact Us!</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>

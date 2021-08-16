@@ -1,0 +1,70 @@
+@import "../../../sass/variables";
+
+nav {
+  background: $white !important;
+  padding: 0px 150px;
+  color: $light-gray;
+
+  .navbar-brand{
+    padding: 0px;
+  }
+
+  .logo_link {
+    width: 100px;
+
+    .logo {
+      width: 100px;
+      height: 50px;
+      background: url('../../../assets/images/logo_chatcartel.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  ul {
+    margin: 0px;
+
+    li {
+      height: 65px;
+      list-style-type: none;
+
+      a {
+        height: 100%;
+        color: $light-gray;
+        text-decoration: none;
+        padding: 0px 20px 0px 20px;
+        line-height: 60px;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    margin-left: 48px;
+    border-radius: 20px;
+
+    li {
+      height: auto;
+      list-style-type: none;
+
+      .dropdown-item {
+        font-weight: 500;
+
+        &:hover {
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background: $light-orange;
+  color: $orange-chatcartel !important;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 640px) {
+
+  nav {
+    padding: 0px;
+  }
+}

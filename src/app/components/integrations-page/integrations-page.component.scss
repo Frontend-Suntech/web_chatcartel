@@ -1,0 +1,48 @@
+@import '../../../sass/variables';
+
+main {
+  height: 100vh;
+  padding-top: 75px;
+  background: $footer;
+
+  .container {
+    color: $light-gray;
+
+    .sap {
+      width: 120px;
+      height: 120px;
+      background: url('../../../assets/images/sap.svg') no-repeat center;
+      background-size: contain;
+    }
+
+    .dynamics {
+      width: 120px;
+      height: 120px;
+      background: url('../../../assets/images/dynamics.svg') no-repeat center;
+      background-size: contain;
+    }
+
+    .salesforce {
+      width: 120px;
+      height: 120px;
+      background: url('../../../assets/images/salesforce.png') no-repeat center;
+      background-size: contain;
+    }
+
+    .zapier {
+      width: 120px;
+      height: 120px;
+      background: url('../../../assets/images/zapier.png') no-repeat center;
+      background-size: contain;
+    }
+
+    .hubspot {
+      width: 120px;
+      height: 120px;
+      background: url('../../../assets/images/hubspot.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+
+}

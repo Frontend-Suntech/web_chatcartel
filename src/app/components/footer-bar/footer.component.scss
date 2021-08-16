@@ -1,0 +1,24 @@
+@import '../../../sass/variables';
+
+footer {
+  background: $footer;
+
+  .footer_scontent {
+    padding: 100px 0px;
+
+    strong {
+      white-space: nowrap;
+    }
+  }
+
+  .suntech_logo {
+    width: 75%;
+  }
+
+  .list {
+
+    * {
+      margin-bottom: 10px;
+    }
+  }
+}

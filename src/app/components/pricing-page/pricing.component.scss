@@ -1,0 +1,99 @@
+@import '../../../sass/variables';
+
+main {
+  height: 100vh;
+  padding-top: 75px;
+
+  h1 {
+    color: $light-gray;
+    font-weight: 400;
+
+    span:first-child {
+      color: $orange-chatcartel;
+      font-weight: 900;
+    }
+
+    span:last-child {
+      color: $light-blue;
+      font-weight: 900;
+    }
+  }
+
+  .grid_template {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    .items {
+      height: 200px;
+
+      .box {
+        background: $box-gray;
+        border-radius: 20px;
+
+        .icon_store {
+          width: 50px;
+          height: 50px;
+          background: url('../../../assets/images/store.svg') no-repeat center;
+          background-size: contain;
+        }
+
+        .icon_restaurant {
+          width: 50px;
+          height: 50px;
+          background: url('../../../assets/images/store.svg') no-repeat center;
+          background-size: contain;
+        }
+
+        .icon_travel {
+          width: 50px;
+          height: 50px;
+          background: url('../../../assets/images/store.svg') no-repeat center;
+          background-size: contain;
+        }
+
+        .icon_b2b {
+          width: 50px;
+          height: 50px;
+          background: url('../../../assets/images/store.svg') no-repeat center;
+          background-size: contain;
+        }
+
+        .icon_financial {
+          width: 50px;
+          height: 50px;
+          background: url('../../../assets/images/store.svg') no-repeat center;
+          background-size: contain;
+        }
+
+        .icon_telecom {
+          width: 50px;
+          height: 50px;
+          background: url('../../../assets/images/store.svg') no-repeat center;
+          background-size: contain;
+        }
+
+        .icon_insurance {
+          width: 50px;
+          height: 50px;
+          background: url('../../../assets/images/store.svg') no-repeat center;
+          background-size: contain;
+        }
+
+        .icon_automotive {
+          width: 50px;
+          height: 50px;
+          background: url('../../../assets/images/store.svg') no-repeat center;
+          background-size: contain;
+        }
+
+        svg {
+          width: 50px;
+        }
+      }
+
+      .active {
+        background: $orange-opa;
+        color: $orange-chatcartel;
+      }
+    }
+  }
+}
