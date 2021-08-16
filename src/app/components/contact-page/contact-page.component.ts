@@ -19,7 +19,7 @@ export class ContactPageComponent implements OnInit {
     this._renderer2.addClass(this._document.body.lastElementChild, 'px-4');
     this._renderer2.addClass(this._document.body.lastElementChild, 'mx-auto');
     this._renderer2.removeClass(this._document.body.lastElementChild, 'd-none');
-    this._renderer2.addClass(this._document.body.childNodes[13], 'd-none');
+    this._renderer2.addClass(this._document.body.childNodes[14], 'd-none');
   }
 
 }

@@ -14,8 +14,8 @@ export class IntegrationsPageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this._renderer2.addClass(this._document.body.childNodes[13], 'd-none');
-    this._renderer2.addClass(this._document.body.childNodes[16], 'd-none');
+    this._renderer2.addClass(this._document.body.childNodes[14], 'd-none');
+    this._renderer2.addClass(this._document.body.childNodes[17], 'd-none');
     this._renderer2.removeClass(this._document.getElementsByTagName('app-footer').item(0), 'd-none');
   }
 

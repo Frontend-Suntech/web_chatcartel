@@ -45,6 +45,55 @@ nav {
       height: auto;
       list-style-type: none;
 
+      .icon_1 {
+        width: 20px;
+        height: 20px;
+        background: url('../../../assets/images/automatic_chat.svg') no-repeat center;
+        background-size: contain;
+      }
+
+      .icon_2 {
+        width: 20px;
+        height: 20px;
+        background: url('../../../assets/images/chats_small.svg') no-repeat center;
+        background-size: contain;
+      }
+
+      .icon_3 {
+        width: 20px;
+        height: 20px;
+        background: url('../../../assets/images/actions_small.svg') no-repeat center;
+        background-size: contain;
+      }
+
+      .icon_4 {
+        width: 20px;
+        height: 20px;
+        background: url('../../../assets/images/product_small.svg') no-repeat center;
+        background-size: contain;
+      }
+
+      .icon_5 {
+        width: 20px;
+        height: 20px;
+        background: url('../../../assets/images/c_commerce_small.svg') no-repeat center;
+        background-size: contain;
+      }
+
+      .icon_6 {
+        width: 20px;
+        height: 20px;
+        background: url('../../../assets/images/data_small.svg') no-repeat center;
+        background-size: contain;
+      }
+
+      .icon_7 {
+        width: 20px;
+        height: 20px;
+        background: url('../../../assets/images/automation_small.svg') no-repeat center;
+        background-size: contain;
+      }
+
       .dropdown-item {
         font-weight: 500;
 
