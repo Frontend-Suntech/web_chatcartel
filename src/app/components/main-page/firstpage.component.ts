@@ -122,8 +122,9 @@ export class FirstpageComponent implements OnInit {
       }
     ];
 
+    console.log(this._document.body.childNodes);
+    this._renderer2.addClass(this._document.body.childNodes[11], 'd-none');
     this._renderer2.addClass(this._document.body.childNodes[14], 'd-none');
-    this._renderer2.addClass(this._document.body.childNodes[17], 'd-none');
     this._renderer2.removeClass(this._document.getElementsByTagName('app-footer').item(0), 'd-none');
   }
 

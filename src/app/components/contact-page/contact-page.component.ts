@@ -15,11 +15,12 @@ export class ContactPageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    console.log(this._document.body.childNodes);
     this._renderer2.addClass(this._document.getElementsByTagName('app-footer').item(0), 'd-none');
-    this._renderer2.addClass(this._document.body.lastElementChild, 'px-4');
-    this._renderer2.addClass(this._document.body.lastElementChild, 'mx-auto');
-    this._renderer2.removeClass(this._document.body.lastElementChild, 'd-none');
-    this._renderer2.addClass(this._document.body.childNodes[14], 'd-none');
+    this._renderer2.addClass(this._document.body.childNodes[14], 'px-4');
+    this._renderer2.addClass(this._document.body.childNodes[14], 'mx-auto');
+    this._renderer2.removeClass(this._document.body.childNodes[14], 'd-none');
+    this._renderer2.addClass(this._document.body.childNodes[11], 'd-none');
   }
 
 }
